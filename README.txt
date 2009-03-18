@@ -1,15 +1,15 @@
 = jpmobile_with_crawler
 
-* http://---
+* http://github.com/koshigoe/jpmobile_with_crawler/tree/master
 
 == DESCRIPTION:
 
-jpmobileにモバイル用検索クローラを対応させるもの。
+jpmobile にモバイル用検索クローラを追加するもの。
 
 == FEATURES/PROBLEMS:
 
 * 実験的モジュール
-* RubyForgeに関する記述はダミー
+* RubyForge に関する記述はダミー
 
 == SYNOPSIS:
 
@@ -17,11 +17,21 @@ jpmobileにモバイル用検索クローラを対応させるもの。
 
 == REQUIREMENTS:
 
-* jpmobile (version 0.0.3)
+* jpmobile (version 0.0.4)
 
 == INSTALL:
 
-* sudo gem install ...
+  rake gem
+  sudo gem install pkg/jpmobile_with_crawler-0.0.4.gem
+
+== ChangeLog
+
+* 2009/03/18
+** jpmobile-0.0.4 対応
+** 過去のバージョンと互換性を維持しない変更
+*** Jpmobile::Mobile に追加していたメソッドの削除と名前変更
+*** 常にモバイル用検索クローラへが有効になる様に変更
+** テスト周りの修正
 
 == LICENSE:
 

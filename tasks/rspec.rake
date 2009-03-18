@@ -18,5 +18,5 @@ desc "Run the specs under spec/models"
 Spec::Rake::SpecTask.new do |t|
   spec_dir = File.join(File.dirname(__FILE__), '..', 'spec')
   t.spec_opts = File.read(File.join(spec_dir, 'spec.opts')).split
-  t.spec_files = FileList[File.join(spec_dir, 'unit', '**', '*_spec.rb')]
+  t.spec_files = FileList[File.join(spec_dir, '**', '*_spec.rb')]
 end
